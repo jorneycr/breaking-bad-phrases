@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 
 
@@ -33,3 +34,14 @@ const ContenedorFrase = styled.div`
         margin-top: 2rem;
     }
 `;
+
+const Frase = ({frase}) => {
+    return ( 
+        <ContenedorFrase>
+        <h1>{frase.quote}</h1>
+        <p>-{frase.author}-</p>
+        </ContenedorFrase>
+     );
+}
+ 
+export default Frase;
