@@ -36,6 +36,9 @@ const ContenedorFrase = styled.div`
 `;
 
 const Frase = ({frase}) => {
+
+    // if(Object.key(frase).length===0)return null;
+
     return ( 
         <ContenedorFrase>
         <h1>{frase.quote}</h1>
